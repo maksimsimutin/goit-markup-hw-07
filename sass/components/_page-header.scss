@@ -1,3 +1,6 @@
+
+// header
+
 header .container {
     display: flex;
     justify-content: space-between;
@@ -12,48 +15,8 @@ header .container {
     width: 1200px; 
   }
   
-  .navigation {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-link {
-    text-decoration: none;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: $text-primary;
-  }
-  
   .logo-color {
     color: $quaternary-color;
-  }
-  
-  /* .logo-link {
-    text-decoration: none;
-  } */
-  
-  .list-nav {
-    list-style: none;
-    margin-left: 93px;
-    display: flex;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em; 
-  }
-  
-  .list-nav .item {
-    position: relative;
-    margin-right: 50px;
-  }
-  
-  .list-nav .item:last-child {
-    margin-right: 0px;
   }
   
   .line::after {
@@ -66,89 +29,101 @@ header .container {
     background: $quaternary-color;
     border-radius: 2px
   }
+
+// navigation
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
   
-  .navigation-link {
+  .navigation__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $text-primary;
+  }
+  
+  .navigation__list {
+    margin-left: 93px;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+  }
+  
+  .navigation__list .navigation__item {
+    position: relative;
+    margin-right: 50px;
+  }
+  
+  .navigation__list .navigation__item:last-child {
+   margin-right: 0px;
+  }
+  
+  
+  .navigation__link {
     display: block;
-    text-decoration: none;
     padding: 32px 0px;
+    color: $text-primary;
     transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
   }
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
+
+  // contacts 
   
-  .contacts-list {
+  .contacts__list {
     display: flex;
     list-style: none;
   }
   
-  .nav-icon {
+  .contacts__icon {
     margin-right: 10px;
     transition: fill $time-hover cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  /* .icon-mail  */
-  /* .icon-phon {
-    margin-right: 10px;
-    transition: fill var(--time-hover) cubic-bezier(0.4, 0, 0.2, 1);
-  } */
-  
-  .contacts-link:hover .nav-icon,
-  .contacts-link:focus .nav-icon {
+  .contacts__link:hover .contacts__icon,
+  .contacts__link:focus .contacts__icon {
     fill: $quaternary-color;
   }
   
-  /* .contacts-link:hover .icon-phon,
-  .contacts-link:focus .icon-phon {
-    fill: var(--quaternary-color);
-  } */
-  
-  
-  .contacts-list .item {
+  .contacts__list .contacts__item {
     margin-right: 50px;
   }
-  /* display: block; */
   
-  .contacts-list .item:last-child {
-    margin-right: 0px;
-  }
+   .contacts__list .contacts__item:last-child {
+     margin-right: 0px;
+   }
   
-  .contacts-link {
+  .contacts__link {
     display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    text-decoration: none;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     font-weight: 500;
+    color: $text-secondary;
     transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-   /* .navigation-link */
-   .logo-color { 
-    color: $quaternary-color;
-  }
   
-  .navigation-link {
-    color: $text-primary;
-  }
-  
-  .contacts-link {
-    color: $text-secondary;
-  }
-  
-  .contacts-link:hover,
-  .contacts-link:focus {
+  .contacts__link:hover,
+  .contacts__link:focus {
       color: $quaternary-color;
   }
   
-  .list-nav .navigation-link:hover,
-  .list-nav .navigation-link:focus {
+  .navigation__list .navigation__link:hover,
+  .navigation__list .navigation__link:focus {
     color: $quaternary-color;
   }
   
-  .contacts-list .contacts-link:hover,
-  .contacts-list .contact-link:focus {
+  .contacts__list .contacts__link:hover,
+  .contacts__list .contacts__link:focus {
     color: $quaternary-color;
   }

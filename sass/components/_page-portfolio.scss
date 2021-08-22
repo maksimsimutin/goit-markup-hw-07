@@ -1,3 +1,6 @@
+
+//section portfolio
+
 .section-portfolio {
     border-top-width:  1px; 
     border-top-style: solid;
@@ -71,9 +74,9 @@
     min-width: 130px;
   }
   
-  /*list section*/
+  //  portfolio card
   
-  .portfolio-list {
+  .portfolio-card__list {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
@@ -81,7 +84,7 @@
     list-style: none;
   }
   
-  .portfolio-list .item{
+  .portfolio-card__list .portfolio-card__item {
     flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
     margin-left: 30px;
@@ -89,32 +92,32 @@
   }
   
   
-  .portfolio-list .item:hover {
+  .portfolio-card__list .portfolio-card__item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
   }
-  .portfolio-list .link-img:focus {
+  .portfolio-card__list  .portfolio-card__img:focus {
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
   }
-  .link-img {
+   .portfolio-card__img {
     text-decoration: none;
     color: $text-primary;
     transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);  
   }
   
-  .link-img:hover,
-  .link-img:focus {
+   .portfolio-card__img:hover,
+   .portfolio-card__img:focus {
     color: $quaternary-color;  
   }
   
-  .heading-portfolio-list {
+  .portfolio-card__heading {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
   }
   
-  .text-list {
+  .portfolio-card__name {
     margin-top: 4px;
     font-weight:400;
     font-size: 16px;
@@ -123,31 +126,19 @@
     color: $text-secondary;
   }
   
-  .container-portfolio {
+  .portfolio-card__container {
     padding: 20px 24px;
     border: 1px solid #eee;
     border-top: 0;
-    /* display: flex;
-    flex-direction: column;
-    border-right-width: 1px; 
-    border-right-style: solid;
-    border-right-color: #eee;
-  
-    border-bottom-width: 1px; 
-    border-bottom-style: solid;
-    border-bottom-color: #eee;
-  
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: #eee */
   }
   
-  .thumb {
-    position: relative;
+  .portfolio-card__thumb {
     overflow: hidden;
+    position: relative;
   }
     
-  .thumb-text {
+  .portfolio-card__text {
+   overflow: hidden;
    position: absolute;
    padding: 63px 24px;
    bottom: 0;
@@ -164,8 +155,8 @@
    transition: transform $time-hover cubic-bezier(0.4, 0, 0.2, 1);
   }
     
-    .link-img:hover .thumb-text,
-    .link-img:focus .thumb-text {
+    .portfolio-card__img:hover .portfolio-card__text,
+    .portfolio-card__img:focus .portfolio-card__text {
       transform: translateY(0);
   }
   
