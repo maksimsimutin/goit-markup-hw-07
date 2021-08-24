@@ -4,50 +4,51 @@
 .section-portfolio {
     border-top-width:  1px; 
     border-top-style: solid;
-    border-top-color: #ececec
+    border-top-color: #ececec;
+    
+    &__list {
+      display: flex;
+      margin-bottom: 50px;
+      justify-content: center;
+      list-style: none;
+      text-decoration: none;   
+    }
+    
+    &__list &__item  {
+      margin-right: 8px;
+    }
+    
+    &__list &__item:last-child {
+      margin-right: 0px;
+    }
+    
+    &__btn {
+      font-family: Roboto,sans-serif; 
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.62;
+      text-align: center;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      display: inline-block;
+      border: 1px solid transparent;
+      height: 38px;
+      border-radius: 4px;
+      padding: 6px 22px;
+    
+      transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1),
+      background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow  $time-hover cubic-bezier(0.4, 0, 0.2, 1); 
+    }
+    
+    &__btn:hover,
+    &__btn:focus {
+      background-color: $quaternary-color;
+      color: $tertiary-color;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
   }
   
-  .section-portfolio__list {
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
-    list-style: none;
-    text-decoration: none;   
-  }
-  
-  .section-portfolio__list .section-portfolio__item  {
-    margin-right: 8px;
-  }
-  
-  .section-portfolio__list .section-portfolio__item:last-child {
-    margin-right: 0px;
-  }
-  
-  .section-portfolio__btn {
-    font-family: Roboto,sans-serif; 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-    display: inline-block;
-    border: 1px solid transparent;
-    height: 38px;
-    border-radius: 4px;
-    padding: 6px 22px;
-  
-    transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1),
-    background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow  $time-hover cubic-bezier(0.4, 0, 0.2, 1); 
-  }
-  
-  .section-portfolio__btn:hover,
-  .section-portfolio__btn:focus {
-    background-color: $quaternary-color;
-    color: $tertiary-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
   
   .acting { 
     background-color: $quaternary-color;
@@ -76,29 +77,29 @@
   
   //  portfolio card
   
-  .portfolio-card__list {
+  .portfolio {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
-    list-style: none;
+   
+    & &__item {
+      flex-basis: calc(100% / 3 - 30px);
+      margin-top: 30px;
+      margin-left: 30px;
+      transition: box-shadow  $time-hover cubic-bezier(0.4, 0, 0.2, 1);  
+    }
+    
+    
+    &__list &__item:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
+    }
+    &__list  &__img:focus {
+      display: block;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
+    }
   }
   
-  .portfolio-card__list .portfolio-card__item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
-    transition: box-shadow  $time-hover cubic-bezier(0.4, 0, 0.2, 1);  
-  }
-  
-  
-  .portfolio-card__list .portfolio-card__item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
-  }
-  .portfolio-card__list  .portfolio-card__img:focus {
-    display: block;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
-  }
    .portfolio-card__img {
     text-decoration: none;
     color: $text-primary;
