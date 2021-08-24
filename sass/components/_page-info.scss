@@ -1,41 +1,44 @@
-.list-info {
+
+// page info
+
+.info {
     display: flex;
-    list-style: none;
+    
+    & &__item {
+      width: 270px;
+      margin-right: 30px;
+    }
+    
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 120px;
+      background: $tertiary-color;
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
+    
+    & &__item:last-child {
+      margin-right: 0px;
+    }
+    
+    &__heading {
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $text-primary;
+    }
+    
+    &__text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $text-secondary;
+    }
   }
   
-  .list-info .item {
-    width: 270px;
-    margin-right: 30px;
-  }
-  
-  .info-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    background: $tertiary-color;
-    border-radius: 4px;
-    margin-bottom: 30px;
-  }
-  
-  .list-info .item:last-child {
-    margin-right: 0px;
-  }
-  
-  .heading-info {
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $text-primary;
-  }
-  
-  .text-info {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $text-secondary;
-  }

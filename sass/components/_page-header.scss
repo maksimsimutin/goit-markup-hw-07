@@ -15,9 +15,6 @@ header .container {
     width: 1200px; 
   }
   
-  .logo-color {
-    color: $quaternary-color;
-  }
   
   .line::after {
     content: "";
@@ -29,101 +26,105 @@ header .container {
     background: $quaternary-color;
     border-radius: 2px
   }
-
-// navigation
-
+  
+  // navigation
+  
   .navigation {
     display: flex;
     align-items: center;
-  }
-  
-  .navigation__logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: $text-primary;
-  }
-  
-  .navigation__list {
-    margin-left: 93px;
-    display: flex;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em; 
-  }
-  
-  .navigation__list .navigation__item {
-    position: relative;
-    margin-right: 50px;
-  }
-  
-  .navigation__list .navigation__item:last-child {
-   margin-right: 0px;
-  }
-  
-  
-  .navigation__link {
-    display: block;
-    padding: 32px 0px;
-    color: $text-primary;
-    transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
+    &__logo {
+      padding-top: 24px;
+      padding-bottom: 25px;
+      font-family: Raleway, sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.2;
+      letter-spacing: 0.03em;
+      color: $text-primary;
+    }
+
+    &__list {
+      margin-left: 93px;
+      display: flex;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em; 
+    }
+
+    &__list &__item {
+      position: relative;
+      margin-right: 50px;
+    }
+    
+    &__list &__item:last-child {
+      margin-right: 0px;
+    }
+    
+    &__link {
+      display: block;
+      padding: 32px 0px;
+      color: $text-primary;
+      transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__list &__link:hover,
+    &__list &__link:focus {
+      color: $quaternary-color;
+    }
+  }
+  
+  .logo-color {
+    color: $quaternary-color;
+  }
+  
   // contacts 
   
-  .contacts__list {
+  .contacts {
     display: flex;
-    list-style: none;
-  }
-  
-  .contacts__icon {
-    margin-right: 10px;
-    transition: fill $time-hover cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .contacts__link:hover .contacts__icon,
-  .contacts__link:focus .contacts__icon {
-    fill: $quaternary-color;
-  }
-  
-  .contacts__list .contacts__item {
-    margin-right: 50px;
-  }
-  
-   .contacts__list .contacts__item:last-child {
-     margin-right: 0px;
-   }
-  
-  .contacts__link {
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    color: $text-secondary;
-    transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  
-  .contacts__link:hover,
-  .contacts__link:focus {
+    &__icon {
+      margin-right: 10px;
+      transition: fill $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+      fill: $quaternary-color;
+    }
+    
+    & &__item {
+      margin-right: 50px;
+    }
+    
+    & &__item:last-child {
+       margin-right: 0px;
+     }
+    
+    &__link {
+      display: flex;
+      align-items: center;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      font-weight: 500;
+      color: $text-secondary;
+      transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    
+    &__link:hover,
+    &__link:focus {
+        color: $quaternary-color;
+    }
+    
+    
+    & &__link:hover,
+    & &__link:focus {
       color: $quaternary-color;
+    }
   }
   
-  .navigation__list .navigation__link:hover,
-  .navigation__list .navigation__link:focus {
-    color: $quaternary-color;
-  }
   
-  .contacts__list .contacts__link:hover,
-  .contacts__list .contacts__link:focus {
-    color: $quaternary-color;
-  }
