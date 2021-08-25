@@ -141,7 +141,7 @@ footer {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: $input-color;
   }
   
   .footer__btn {
@@ -159,14 +159,14 @@ footer {
     line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: $primary-color;
   
     transition: background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .footer__btn:hover,
   .footer__btn:focus {
-    background-color: #188ce8;
+    background-color: $footer-btn;
     cursor: pointer;
   }
   

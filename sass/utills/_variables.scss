@@ -8,45 +8,9 @@ $text-secondary: #757575;
 $social-primary: #AFB1B8;
 $light-icon-color: #ffffff;
 
+$input-color: rgba(255, 255, 255, 0.6);
+$footer-btn: #188ce8;
+
 $time-hover: 250ms;
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-}
-
-address {
-  font-style: normal;
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  background-color: $primary-color;
-  color: $text-primary;
-}
