@@ -61,12 +61,12 @@ footer {
   
 //footer social
 
-  .footer__social {
+  .footer-social {
     display: flex;
     flex-direction: column;
   }
   
-  .footer__title {
+  &__title {
     margin-bottom: 20px;
     font-weight: 700;
     line-height: 1.14;
@@ -75,17 +75,17 @@ footer {
     color: $primary-color;
   }
   
-  .footer__list {
+  &__list {
     display: flex;
     align-items: flex-start;
     list-style: none;
   }
   
-  .footer__item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 10px;
   }
   
-  .footer__link {
+  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,12 +97,12 @@ footer {
     transition: background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .footer__link:hover,
-  .footer__link:focus {
+  &__link:hover,
+  &__link:focus {
     background-color: $quaternary-color;
   }
   
-  .footer__icon {
+  &__icon {
     fill: $primary-color;
   }
 
